@@ -10,15 +10,14 @@
 //v1.2
 inline void count_words(const std::string& word, const std::string& filename)
 {		
-		std::ifstream file;
-		file.open(filename);
+		std::ifstream* file = new std::ifstream;
+		file -> open(filename);
 
 		std::string* temp = new std::string;
-		size_t word_cnt = 0;
-
 		std::vector<std::string>* tempv = new std::vector<std::string>;
 
-		while(file >> *temp){
+		while(*file >> *temp)
+		{
 			for(auto& i : *temp){
 				if(isupper(i))
 					i = tolower(i);
@@ -29,18 +28,23 @@ inline void count_words(const std::string& word, const std::string& filename)
 			}
 			tempv -> push_back(*temp);
 		}
-		file.close();
+		file -> close();
+		delete file;
 		delete temp;
-		//...
+		//,,
 		std::sort(tempv -> begin(), tempv -> end());
-		for(std::string::size_type i = 0; i != tempv -> size(); ++i){
-			if(word == (*tempv)[i]){
-				word_cnt += 1;
+
+		size_t* word_cnt = new size_t(0);
+		for(std::string::size_type i = 0; i != tempv -> size(); ++i)
+		{
+			if(word == (*tempv)[i])
+			{
+				*word_cnt += 1;
 			}
 		}
 		delete tempv;
-		std::cout << word_cnt << std::endl;
-		
+		std::cout << *word_cnt << std::endl;		
+		delete word_cnt;
 }
 //much much more clean and actually works, no mess, nothing not needed - it works
 //and finds the exact word your looking for, and how often it actually occurs. 
