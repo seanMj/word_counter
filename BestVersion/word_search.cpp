@@ -38,6 +38,7 @@ inline void count_words(const std::string& word, const std::string& filename)
 			}
 		}
 		std::cout << word_cnt << std::endl;	
+		file.close();
 }
 //this is the best version: simple + to the point = works
 //no fancy pointers, no fancy words just a program that does a task.
