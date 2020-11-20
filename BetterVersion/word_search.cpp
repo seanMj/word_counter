@@ -7,7 +7,7 @@
 #include <vector>
 #include <algorithm>
 //....
-//v1.2
+//v1.2.1
 inline void count_words(const std::string& word, const std::string& filename)
 {		
 		std::ifstream* file = new std::ifstream;
