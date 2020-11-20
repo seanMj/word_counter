@@ -29,19 +29,18 @@ inline void count_words(const std::string& word, const std::string& filename)
 			}
 			tempv -> push_back(*temp);
 		}
+		file.close();
+		delete temp;
 		//...
 		std::sort(tempv -> begin(), tempv -> end());
-
 		for(std::string::size_type i = 0; i != tempv -> size(); ++i){
 			if(word == (*tempv)[i]){
 				word_cnt += 1;
 			}
 		}
-		std::cout << word_cnt << std::endl;
-
-		delete temp;
 		delete tempv;
-		file.close();
+		std::cout << word_cnt << std::endl;
+		
 }
 //much much more clean and actually works, no mess, nothing not needed - it works
 //and finds the exact word your looking for, and how often it actually occurs. 
