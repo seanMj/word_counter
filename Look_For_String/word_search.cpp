@@ -2,12 +2,11 @@
 //namespace fs = std::filesystem; or std::exper...::filesystem; or -lc++fs, or -lstdc++fs... got quite annoying..
 //only after i wrote all the code..
 #include <string>
-#include <exception>
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <iterator>
-#include <algorithm>
+
+
 //..
 int word_counter(std::string& filename, std::string& word){
         std::ifstream file(filename);
