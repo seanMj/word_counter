@@ -40,7 +40,8 @@ inline void count_words(const std::string& word, const std::string& filename)
 		std::cout << word_cnt << std::endl;
 
 		delete temp;
-		delete tempv;		
+		delete tempv;
+		file.close();
 }
 //much much more clean and actually works, no mess, nothing not needed - it works
 //and finds the exact word your looking for, and how often it actually occurs. 
