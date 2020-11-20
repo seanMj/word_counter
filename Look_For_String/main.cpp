@@ -11,7 +11,6 @@ int main(){
 
 	
 	std::string wd = "gold";
-	int w_cnt = 0;
 	
 	std::string file_name = "bible.txt";
 
