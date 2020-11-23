@@ -1,11 +1,11 @@
 //overload for paths on a different system... this one wont let me us it wether i use
 //namespace fs = std::filesystem; or std::exper...::filesystem; or -lc++fs, or -lstdc++fs... got quite annoying..
 //only after i wrote all the code..
-#include <string>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <string>	//includes std::string - used for strings
+#include <fstream>	//includes std::ifstream - used for file I/O
+#include <iostream>	//includes std::cout, std::endl - used for console I/O, (basically for printing results)
+#include <vector>	//includes std::vector, and push_back - used for a container to hold things (like strings, chars, integers)
+#include <algorithm>	//includes std::sort - for sorting a container.
 //....
 //v1.3
 inline void count_words(const std::string& word, const std::string& filename)
