@@ -1,9 +1,10 @@
-#cnt_wrd is the count_word function shared library wrapper
+#cnt_wrd is the count_word function shared library wrapper, the shared Library only works on a linux system, not windows.
+
 import cnt_wrd
 
-#exactly like the main function of C++ but no type (std::string, or int, etc..)
 #filename:
 file = "bible.txt"
+
 #words (strings) to look for through the file being searched
 wrds = ["god", "faith", "worship", "belive", "hope", "walk", "see", "friend", "gold", "king", "kings", "queen", "father", "eat", "fish"]
 
