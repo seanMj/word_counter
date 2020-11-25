@@ -15,11 +15,9 @@ for i in wrds:
 	
 	
 	
-#python robs the programmer of learning the beauty of computer science, they are used by corps. as assembly line workers
-#who dont know exactly what they are doing with the system. this is good if you only care about less learning, and less
-#dedication. 
-#its a good second language though, after you know what the computer is doing - its great. 
-#(every "computer programmer" needs to know at least 2 languages)
+#python robs the programmer of learning the beauty of computer science, it is sometimes used by corps. as assembly line programmers (ive now found)
+#who dont know exactly what they are doing with the system. this is good if you only care about less learning, and less mental dedication. 
+#its a good second language though, after you know what the computer is doing - its great. (every "computer programmer" needs to know at least 2 languages)
 #"and only a poor crafts-man will curse their tools"
 
 
